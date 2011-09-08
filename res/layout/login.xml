@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_width="match_parent">
+        <TextView android:layout_marginBottom="10dip" android:text="Please Log In" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/loginLabel" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:id="@+id/usernameText" android:hint="Username" android:layout_below="@+id/loginLabel" android:layout_width="match_parent"></EditText>
+        <EditText android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignLeft="@+id/usernameText" android:layout_alignRight="@+id/usernameText" android:layout_below="@+id/usernameText" android:hint="Password" android:id="@+id/passwordText"></EditText>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Sign In" android:id="@+id/loginButton" android:layout_alignRight="@+id/usernameText" android:layout_below="@+id/passwordText" android:layout_marginTop="10dip"></Button>
+    </RelativeLayout>
+    
+</RelativeLayout>

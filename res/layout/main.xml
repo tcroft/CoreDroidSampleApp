@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" android:padding="10dip">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/messageText" android:text="User Message" android:textColor="#00f"></TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_below="@+id/messageText" android:layout_alignParentLeft="true" android:layout_marginTop="10dip" android:textColor="#000" android:text="Select Favorite Planet:"></TextView>
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:id="@+id/planetGroup">
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Earth" android:textColor="#000" android:id="@+id/earthRadio"></RadioButton>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jupiter" android:textColor="#000" android:id="@+id/jupiterRadio"></RadioButton>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saturn" android:textColor="#000" android:id="@+id/saturnRadio"></RadioButton>
+    </RadioGroup>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:id="@+id/signoutButton" android:text="Sign Out"></Button>
+</RelativeLayout>
